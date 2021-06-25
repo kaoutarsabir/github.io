@@ -76,7 +76,7 @@ h1 {
     column-count: 2;
     padding-left: 2%;
     padding-right: 2%;
-    column-width: 258px;
+    column-width: 258PX;
     column-gap: 2%;
     column-span: all;
 }
@@ -108,7 +108,6 @@ q {
 #overview {
     width: 250px;
     background-color: #a2b964;
-    margin-top: -15px;
     font-size: 8pt;
     font-family: Arial;
 }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body {
+            padding: 10px 25px 25px 25px;
+            font-family: Arial;
+        }
+        
+        h2,
+        h5 {
+            font-weight: bold;
+        }
+        
+        .header {
+            background-color: #ADD8E6;
+            text-align: center;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .menu {
+            background-color: #2F4F4F;
+            height: 30px;
+        }
+        
+        .menuItem {
+            color: white;
+            border-right: black 1px solid;
+        }
+        
+        .column {
+            height: 430px;
+        }
+        
+        .footer {
+            background-color: #2F4F4F;
+            text-align: center;
+            color: white;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .colomnItem1 {
+            background-color: #AAA;
+        }
+        
+        .colomnItem2 {
+            background-color: #BBB;
+        }
+        
+        .colomnItem3 {
+            background-color: #CCC;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-12 header">
+            <h2>Header</h2>
+        </div>
+    </div>
+
+    <div class="row menu">
+        <div class="col-1 menuItem">Menu1</div>
+        <div class="col-1 menuItem">Menu2</div>
+        <div class="col-1 menuItem">Menu3</div>
+        <div class="col-9 menuItem"></div>
+    </div>
+
+    <div class="row column">
+        <div class="col-4 colomnItem1">Column1</div>
+        <div class="col-4 colomnItem2">Column2</div>
+        <div class="col-4 colomnItem3">Column3</div>
+    </div>
+
+    <div class="row footer">
+        <div class="col">
+            <h5>Footer</h5>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
