@@ -1,18 +1,8 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Handlee', cursive;
+    font-family: 'Handlee';
     font-size: 13pt;
     background-color: #efefef;
     padding: 10px;
-    margin: 0;
-}
-
-p {
-    padding: 0;
     margin: 0;
 }
 
