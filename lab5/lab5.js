@@ -7,7 +7,7 @@ function myTest(expected, found) {
     }
 }
 
-function myTestArray(expected, found) {
+function myTes tArray(expected, found) {
     if (expected.length != found.length) {
         return "TEST FAILED";
     } else if (expected.join("-") !== found.join("-")) {
@@ -108,7 +108,7 @@ const findLongestWord = function(arr) {
     }
     return longest;
 }
-console.log("Expected output of findLongestWord(['abc', '', 'abcde']) is 'abcde'");
+console.log("Expected output of findLongestWord(['zz', '', 'abcde']) is 'abcde'");
 console.log(myTest('abcde', findLongestWord(['abc', '', 'abcde'])));
 
 console.log('----- filterLongestWord function : ----- ');
