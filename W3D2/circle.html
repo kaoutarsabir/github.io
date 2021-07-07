@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="circle.css" type="text/css" rel="stylesheet" />
-    <script src="jQuery-3.6.0.js"></script>
-    <script src="circle.js"></script>
+    <title>Circle Labs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "circlelabs.js"></script>
+    <link href = "circlelabs.css" rel = "stylesheet">
 </head>
-
 <body>
-    Width: <input type="text" id="w" /></br>
-    Grouth Amount: <input type="text" id="g" /></br>
-    Interval: <input type="text" id="i" /></br>
-    <input type="button" id="s" value="start" /> </br>
-    <div id="circle"></div>
+    <div id = "circles">
+    </div>
 
+    <div id = "input-box">
+        <div class = "input-line">
+            <label for = "width-input">Width:</label>
+            <input type="number" id = "width-input"/>
+        </div>
+        <div class = "input-line">
+            <label for = "grow-amount">Growth Amount:</label>
+            <input type = "number" id = "grow-amount"/>
+        </div>
+        <div class = "input-line">
+            <label for = "grow-rate">Grow Rate:</label>
+            <input type = "number" id = "grow-rate"/>
+        </div>
+        <div class = "input-line">
+            <label for = "number-circles">Number Circles:</label>
+            <input id = "number-circles" type="number"/>
+        </div>
+        <div class = "input-line">
+            <button id = "start-button" type="button">Start!</button>
+        </div>
+    </div>
 </body>
-
 </html>
+
