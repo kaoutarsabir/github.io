@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+  </head>
+  <body class="container">
+    <header><%- include('partials/header'); %></header>
+
+    <main>
+      <div class="jumbotron">
+        <a style="text-align: right;"> href="/cart">Shopping Cart <span id="cartCount"><%= cartCount %></span></a>
+        <table>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Action</th>
+          <tbody>
+            <% for (const product of items) { %>
+            <tr>
+              <td><%= product.id %></td>
+              <td><%= product.name %></td>
+              <td><%= product.price %></td>
+              <td><%= product.description %></td>
+              <td>
+                <button data-pid="<%= product.id >">Add To Cart</button>
+              </td>
+            </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer><%- include('partials/footer'); %></footer>
+  </body>
+</html>
